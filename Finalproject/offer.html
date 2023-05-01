@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width , initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer - Moblinu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="asset/logo1.png" width="250px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="Finalproject.html">صفحه اصلی</a></li>
+                    <li><a href="products.html">  لیست محصولات</a></li>
+                    <li><a href="contactus.html">ارتباط با ما </a></li>
+                   
+                    <li><a href="account.html"> ورود | ثبت‌ نام</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="cart.html"><img src="asset/vecteezy_shopping.png" width="35px" height="32px"></a>
+            </div>
+            <img src="asset/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+<!------ cart items details ------>
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>محصولات</th>
+                <th>تعداد</th>
+                <th >قیمت</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="asset/Armless+Loveseat1.jpg">
+                        <p> کاناپه دو نفره<br><a href="">حذف </a></p>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td><h3>7,777,700 تومان</h3></td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>قیمت کالا با تخفیف</td>
+                    <td><h3>5,500,100 تومان</h3></td>
+                </tr>
+                <tr>
+                    <td> مالیات بر ارزش افزوده</td>
+                    <td><h3>   0 تومان</h3></td>
+                </tr>
+                <tr>
+                    <td>جمع سبد شما</td>
+                    <td><h2> 5,500,100 تومان</h2></td>
+                </tr>
+            </table>
+        </div>
+        <a href="offer.html" class="btn"> پرداخت</a>
+    </div>
+
+
+
+<!------ footer ------>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-4">
+                <h3 class="p-footer">لینک‌های پرکاربرد</h3>
+                <ul>
+                    <li> <a class="p-footer"  href="Finalproject.html">صفحه اصلی</a></li>
+                    <li> <a class="p-footer"  href="Finalproject.html">کیف های برند</a></li>
+                    <li> <a class="p-footer" href="Finalproject.html">کیف های پول</a></li>
+                    <li> <a class="p-footer"  href="Finalproject.html">کیف های روزمره</a></li>
+                    <li> <a class="p-footer" href="products.html">لیست محصولات</a></li>
+                </ul>
+            </div>
+           
+
+            <div class="footer-col-4">
+                <h3 class="p-footer">درباره‌ی ما</h3>
+                <p class="p-footer">ما فروشگاه جانتاگالری هستیم،
+                    هدف ما این است که فروشگاه اختصاصی دختران و زنان ایرانی باشیم برای همین بهترین اجناس <br> را با پایین‌ترین قیمت به سراسر ایران ارسال می‌کنیم
+                </p>
+            </div>
+         
+            <div class="footer-col-4">
+                <h3 class="p-footer">دانلود اپلیکیشن</h3>
+              <br>
+                <div class="app-logo">
+                    <a href=""><img src="asset/play-store.png"></a>
+                    <a href=""><img src="asset/app-store.png" ></a>
+                </div>
+            </div>   
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2022 - Yasaman Heshmatian</p>
+    </div>
+</div>
+<!------ js for toggle menu ------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
